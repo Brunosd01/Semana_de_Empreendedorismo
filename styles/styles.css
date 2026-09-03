@@ -1,0 +1,312 @@
+:root {
+    --cor-de-fundo: #EBECEE;
+    --azul-claro: #9AD8FF;
+    --azul-escuro: #192641;
+    --verde-limao: #D6F23C;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--verde-limao);
+    color: var(--azul-escuro);
+    font-family: var(--fonte-principal);
+    /* necessário no <button>, que não herda fonte por padrão */
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em 2em;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    box-sizing: border-box;
+    width: calc(100% - 14em);
+    max-width: 58em;
+    margin: 0 auto;
+    padding: 4em 0;
+}
+
+.cabecalho {
+    background-color: var(--azul-claro);
+    min-height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.cabecalho__titulo {
+    color: var(--azul-escuro);
+    font-size: 3em;
+    margin: 0;
+}
+
+.cabecalho__detalhes {
+    color: var(--azul-escuro);
+    font-size: 1.2em;
+}
+
+.sobre__titulo {
+    color: var(--azul-escuro);
+    font-size: 2.5em;
+    margin: 0 0 0.5em 0;
+}
+
+.sobre__texto {
+    color: var(--azul-escuro);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2em;
+}
+
+.workshops {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.workshops__linha {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.workshops__lista {
+    display: flex;
+    gap: 2em;
+    margin: 2em 7em;
+    padding: 0;
+}
+
+.workshop {
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 18em;
+    border: 4px solid var(--verde-limao);
+    border-radius: 10px;
+    padding: 1em 2em;
+    margin: 0;
+    background-color: var(--azul-escuro);
+}
+
+.workshop__titulo {
+    color: var(--verde-limao);
+    font-size: 1.7em;
+    margin: 0 0 0.7em 0;
+}
+
+.workshop__descricao {
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte-secundaria);
+    font-size: 1em;
+}
+
+.programacao__titulo {
+    color: var(--azul-escuro);
+    font-size: 2.5em;
+    margin: 0 0 0.7em 0;
+}
+
+.programacao__texto {
+    color: var(--azul-escuro);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2em;
+}
+
+.programacao__destaque {
+    color: var(--verde-limao);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.palestrantes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1em 10em;
+}
+
+.palestrantes__lista {
+    margin: 2em 7em;
+}
+
+.palestrante {
+    display: flex;
+    border: 5px solid var(--verde-limao);
+    border-radius: 10px;
+    padding: 1em 2em;
+    margin: 0 0 2em 0;
+    background-color: var(--azul-escuro);
+}
+
+.palestrante__foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 1em 0 0;
+}
+
+.palestrante__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 1em;
+}
+
+.palestrante__nome {
+    color: var(--verde-limao);
+    font-size: 2em;
+}
+
+.palestrante__descricao {
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5em;
+}
+
+.cta {
+    box-sizing: border-box;
+    background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 4em 2em;
+}
+
+.cta__titulo {
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: var(--azul-escuro);
+    max-width: 15em;
+}
+
+.cta__destaque {
+    color: var(--verde-limao);
+}
+
+.cta__descricao {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--azul-escuro);
+    max-width: 48em;
+}
+
+/* --- SEÇÃO: FORMULÁRIO DE INSCRIÇÃO --- */
+.inscricao {
+    box-sizing: border-box;
+    background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 4em 2em;
+}
+
+.inscricao__titulo {
+    color: var(--azul-escuro);
+    font-size: 2.5em;
+    font-family: var(--fonte-principal);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.inscricao__titulo__destaque {
+    color: var(--verde-limao);
+    text-transform: uppercase;
+}
+
+.inscricao__form {
+    width: 100%;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border: 5px solid var(--verde-limao);
+    border-radius: 15px;
+    padding: 2.5em;
+    background-color: var(--azul-escuro);
+}
+
+.inscricao__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: left;
+}
+
+.inscricao__elemento {
+    color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.inscricao__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 2px solid var(--cor-de-fundo);
+    border-radius: 8px;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-escuro);
+    outline: none;
+}
+
+.inscricao__input:focus {
+    border-color: var(--verde-limao);
+}
+
+.inscricao__botao {
+    align-self: center;
+    max-width: 60%;
+    width: auto;
+    padding: 0.8em 2em;
+    border: 3px solid var(--verde-limao);
+    border-radius: 10px;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--verde-limao);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.inscricao__botao:hover {
+    background-color: var(--verde-limao);
+    color: var(--azul-escuro);
+    transform: scale(1.05);
+}
+
+.inscricao__botao:focus {
+    border-color: var(--azul-escuro);
+}

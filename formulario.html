@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscricao</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <section class="inscricao">
+
+        <h1 class="inscricao__titulo">Preencha os campos abaixo para se <strong class="inscricao__titulo__destaque">inscrever</strong>!</h1>
+
+        <form class="inscricao__form" autocomplete="off">
+
+            <div class="inscricao__grupo">
+                <p class="inscricao__elemento">Nome completo</p>
+                <input class="inscricao__input" type="text" name="nome" id="nome">
+            </div>
+
+            <div class="inscricao__grupo">
+                <p class="inscricao__elemento">E-mail</p>
+                <input class="inscricao__input" type="email" name="e-mail" id="e-mail">
+            </div>
+
+            <div class="inscricao__grupo">
+                <p class="inscricao__elemento">Instituição/Curso</p>
+                <input class="inscricao__input" type="text" name="instituicao" id="instituicao">
+            </div>
+
+            <div class="inscricao__grupo">
+                <p class="inscricao__elemento">Workshop de interesse</p>
+                <input class="inscricao__input" type="text" name="workshop" id="workshop">
+            </div>
+
+            <div class="inscricao__grupo">
+                <p class="inscricao__elemento">Telefone (opcional)</p>
+                <input class="inscricao__input" type="tel" name="telefone" id="telefone">
+            </div>
+
+            <a href="index.html" class="inscricao__botao">Confirmar inscrição</a>
+        </form>
+    </section>
+</body>
+</html>
