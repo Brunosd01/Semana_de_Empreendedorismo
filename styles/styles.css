@@ -37,7 +37,7 @@ body {
 
 .container {
     box-sizing: border-box;
-    width: calc(100% - 14em);
+    width: 90%;
     max-width: 58em;
     margin: 0 auto;
     padding: 4em 0;
@@ -142,11 +142,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin: 1em 10em;
+    width: 90%;
+    max-width: 58em;
+    margin: 1em auto;
 }
 
 .palestrantes__lista {
-    margin: 2em 7em;
+    margin: 0;
+    padding: 0;
 }
 
 .palestrante {
@@ -309,4 +312,145 @@ body {
 
 .inscricao__botao:focus {
     border-color: var(--azul-escuro);
+}
+
+@media (max-width: 1160px) {
+    .workshops__lista {
+        margin: 1.5em 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2.5em 0;
+    }
+
+    .cabecalho {
+        padding: 3em 1.5em;
+        min-height: auto;
+    }
+
+    .cabecalho__titulo {
+        font-size: 2em;
+    }
+
+    .cabecalho__detalhes {
+        font-size: 1.1em;
+    }
+
+    .sobre__titulo,
+    .programacao__titulo,
+    .cta__titulo,
+    .inscricao__titulo {
+        font-size: 1.8em;
+    }
+
+    .sobre__texto,
+    .programacao__texto,
+    .cta__descricao {
+        font-size: 1.05em;
+    }
+
+    .workshops {
+        gap: 0;
+    }
+
+    .workshops__linha {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .workshops__lista {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0;
+        width: 100%;
+        padding: 0 1em;
+        box-sizing: border-box;
+    }
+
+    .workshop {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .palestrantes {
+        width: 92%;
+        margin: 1em auto;
+    }
+
+    .palestrantes__lista {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .palestrante {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5em 1em;
+    }
+
+    .palestrante__foto {
+        width: 120px;
+        height: 120px;
+        margin: 0 0 1em 0;
+    }
+
+    .palestrante__info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .palestrante__nome {
+        font-size: 1.6em;
+    }
+
+    .palestrante__descricao {
+        font-size: 1.1em;
+    }
+
+    .cta {
+        padding: 3em 1.5em;
+    }
+
+    .inscricao {
+        padding: 3em 1em;
+    }
+
+    .inscricao__form {
+        padding: 1.5em;
+        border-width: 4px;
+    }
+
+    .inscricao__botao {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho__titulo {
+        font-size: 1.6em;
+    }
+
+    .sobre__titulo,
+    .programacao__titulo,
+    .cta__titulo,
+    .inscricao__titulo {
+        font-size: 1.5em;
+    }
+
+    .botao {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
+    }
+
+    .palestrante__foto {
+        width: 100px;
+        height: 100px;
+    }
 }
